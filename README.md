@@ -16,6 +16,9 @@ This Rust project demonstrates how to make an asynchronous HTTP GET request to t
 
 ```toml
 [dependencies]
-tokio = { version = "1", features = ["full"] }
-reqwest = { version = "0.11", features = ["json"] }
-serde = { version = "1.0", features = ["derive"] }
+
+serde_json = "1.0"
+serde = {version = "1.0", features = ["derive"]}
+reqwest = {version = "0.10", features = ["json"] }
+tokio = {version = "0.2.3", features = ["full"]}
+
